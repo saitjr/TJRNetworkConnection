@@ -14,7 +14,6 @@
 
 @interface ViewController ()
 
-
 @property (strong, nonatomic) IBOutlet UIButton *getSynchronizeRequestButton;
 @property (strong, nonatomic) IBOutlet UIButton *getAsynchronizeRequestButton;
 
