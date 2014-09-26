@@ -69,6 +69,14 @@
     }
 }
 
+- (void)sendPostAsynchronizeRequestWithMethod:(NSString *)method parameters:(NSDictionary *)parameters callback:(Callback)callback {
+    
+    self.callback = callback;
+    
+    [NSURLConnection connectionWithRequest:[self configPostURLRequestWithMethod:method parameters:parameters] delegate:self];
+
+}
+
 - (NSURLRequest *)configGetUrlRequestWithMethod:(NSString *)method parameters:(NSDictionary *)parameters {
     
     NSMutableString *httpBodyString = [method mutableCopy];

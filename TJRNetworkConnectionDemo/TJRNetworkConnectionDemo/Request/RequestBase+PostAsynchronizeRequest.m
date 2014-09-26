@@ -19,7 +19,7 @@
     [parameters setObject:c forKey:@"c"];
     [parameters setObject:type forKey:@"type"];
     
-    [self sendGetAsynchronizeRequestWithMethod:@"http://125.70.10.34:8119/ggc/api.php" parameters:parameters callback:callback];
+    [self sendPostAsynchronizeRequestWithMethod:@"http://125.70.10.34:8119/ggc/api.php" parameters:parameters callback:callback];
 }
 
 @end
