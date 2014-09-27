@@ -6,6 +6,16 @@
 //  Copyright (c) 2014年 tangjr. All rights reserved.
 //
 
+/**
+ *  这是网络请求框架的第一层
+ *  这一层一般为视图控件（即UI）层。
+ *  
+ *  实现：
+ *  1. 按钮（或自动）触发一个响应事件时
+ *  2. 获取需要传递的参数
+ *  3. 调用第二层方法，传递参数以及配置请求完成后的回调方法
+ */
+
 #import "ViewController.h"
 #import "RequestBase+GetSynchronizeRequest.h"
 #import "RequestBase+GetAsynchronizeRequest.h"
