@@ -86,7 +86,7 @@
     
     // 发起请求
     NSError *error = nil;
-    // 接收请求返回的数据
+    // post参数配置(configPostURLRequestWithMethod会在后面介绍) 接收请求返回的数据
     NSData *data = [NSURLConnection sendSynchronousRequest:[self configPostURLRequestWithMethod:method parameters:parameters] returningResponse:nil error:&error];
     
     if (error) {
