@@ -90,6 +90,14 @@ static RequestBase *networkBase = nil;
     [connection sendPostAsynchronizeRequestWithMethod:method parameters:parameters callback:callback];
 }
 
+/**
+ *  发起POST异步请求并上传图片
+ *
+ *  @param method     请求的网络地址
+ *  @param parameters 参数
+ *  @param pictures   图片
+ *  @param callback   回调方法
+ */
 + (void)sendPostAsynchronizeRequestWithMethod:(NSString *)method parameters:(NSDictionary *)parameters pictures:(NSDictionary *)pictures callback:(Callback)callback {
     
     TJRNetworkConnection *connection = [[TJRNetworkConnection alloc] init];
