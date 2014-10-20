@@ -90,4 +90,10 @@ static RequestBase *networkBase = nil;
     [connection sendPostAsynchronizeRequestWithMethod:method parameters:parameters callback:callback];
 }
 
++ (void)sendPostAsynchronizeRequestWithMethod:(NSString *)method parameters:(NSDictionary *)parameters pictures:(NSDictionary *)pictures callback:(Callback)callback {
+    
+    TJRNetworkConnection *connection = [[TJRNetworkConnection alloc] init];
+    [connection sendPostAsynchronizeRequestWithMethod:method parameters:parameters pictures:pictures callback:callback];
+}
+
 @end

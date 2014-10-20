@@ -10,29 +10,29 @@
 	<string>TJRNetworkConnectionDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4E517377-0115-4C2B-97D2-80DDEDE0D475</key>
+		<key>3A3B9D08D7A5EADFCCB72A02F95BC47DAC8742B8</key>
 		<string>https://github.com/saitjr/TJRNetworkConnection.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TJRNetworkConnectionDemo/TJRNetworkConnectionDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4E517377-0115-4C2B-97D2-80DDEDE0D475</key>
+		<key>3A3B9D08D7A5EADFCCB72A02F95BC47DAC8742B8</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/saitjr/TJRNetworkConnection.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4E517377-0115-4C2B-97D2-80DDEDE0D475</string>
+	<string>3A3B9D08D7A5EADFCCB72A02F95BC47DAC8742B8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4E517377-0115-4C2B-97D2-80DDEDE0D475</string>
+			<string>3A3B9D08D7A5EADFCCB72A02F95BC47DAC8742B8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TJRNetworkConnection</string>
 		</dict>

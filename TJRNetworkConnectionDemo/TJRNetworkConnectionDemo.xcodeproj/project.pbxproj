@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9610C1A319F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9610C1A219F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m */; };
 		964B8E0819D4492E008E9F3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964B8E0719D4492E008E9F3E /* Foundation.framework */; };
 		964B8E0A19D4492E008E9F3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964B8E0919D4492E008E9F3E /* CoreGraphics.framework */; };
 		964B8E0C19D4492E008E9F3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964B8E0B19D4492E008E9F3E /* UIKit.framework */; };
@@ -27,6 +28,7 @@
 		964B8E4919D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4819D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.m */; };
 		964B8E4C19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4B19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m */; };
 		964B8E4F19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4E19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m */; };
+		964E979E19F4922B00CED6A5 /* 颜色填充-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 964E979D19F4922B00CED6A5 /* 颜色填充-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9610C1A119F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostAsynchronizeRequestSendPicture.h"; sourceTree = "<group>"; };
+		9610C1A219F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostAsynchronizeRequestSendPicture.m"; sourceTree = "<group>"; };
 		964B8E0419D4492E008E9F3E /* TJRNetworkConnectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TJRNetworkConnectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		964B8E0719D4492E008E9F3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		964B8E0919D4492E008E9F3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,6 +75,7 @@
 		964B8E4B19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostSynchronizeRequest.m"; sourceTree = "<group>"; };
 		964B8E4D19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostAsynchronizeRequest.h"; sourceTree = "<group>"; };
 		964B8E4E19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostAsynchronizeRequest.m"; sourceTree = "<group>"; };
+		964E979D19F4922B00CED6A5 /* 颜色填充-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "颜色填充-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +140,7 @@
 				964B8E1919D4492E008E9F3E /* Main.storyboard */,
 				964B8E1C19D4492E008E9F3E /* ViewController.h */,
 				964B8E1D19D4492E008E9F3E /* ViewController.m */,
+				964E979D19F4922B00CED6A5 /* 颜色填充-1.png */,
 				964B8E4019D45BE5008E9F3E /* Request */,
 				964B8E3C19D44CCD008E9F3E /* TJRNetworkConnection */,
 				964B8E1F19D4492E008E9F3E /* Images.xcassets */,
@@ -194,6 +200,8 @@
 				964B8E4B19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m */,
 				964B8E4D19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.h */,
 				964B8E4E19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m */,
+				9610C1A119F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.h */,
+				9610C1A219F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -275,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				964B8E2019D4492E008E9F3E /* Images.xcassets in Resources */,
+				964E979E19F4922B00CED6A5 /* 颜色填充-1.png in Resources */,
 				964B8E1219D4492E008E9F3E /* InfoPlist.strings in Resources */,
 				964B8E1B19D4492E008E9F3E /* Main.storyboard in Resources */,
 			);
@@ -297,6 +306,7 @@
 			files = (
 				964B8E4619D460E9008E9F3E /* RequestBase+GetSynchronizeRequest.m in Sources */,
 				964B8E4F19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m in Sources */,
+				9610C1A319F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m in Sources */,
 				964B8E4C19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m in Sources */,
 				964B8E1E19D4492E008E9F3E /* ViewController.m in Sources */,
 				964B8E1819D4492E008E9F3E /* AppDelegate.m in Sources */,
@@ -508,6 +518,7 @@
 				964B8E3819D4492E008E9F3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		964B8E3919D4492E008E9F3E /* Build configuration list for PBXNativeTarget "TJRNetworkConnectionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +527,7 @@
 				964B8E3B19D4492E008E9F3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

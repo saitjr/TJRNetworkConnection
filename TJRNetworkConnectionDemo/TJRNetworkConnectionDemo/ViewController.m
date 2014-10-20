@@ -21,6 +21,7 @@
 #import "RequestBase+GetAsynchronizeRequest.h"
 #import "RequestBase+PostSynchronizeRequest.h"
 #import "RequestBase+PostAsynchronizeRequest.h"
+#import "RequestBase+PostAsynchronizeRequestSendPicture.h"
 
 @interface ViewController ()
 
@@ -29,11 +30,15 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *postSynchronizeRequestButton;
 @property (strong, nonatomic) IBOutlet UIButton *postAsynchronizeRequestButton;
+@property (strong, nonatomic) IBOutlet UIButton *postAsunchronizeRequestAndPictureButton;
+
+
 
 - (IBAction)getSynchronizeRequestButtonPressed:(id)sender;
 - (IBAction)getAsynchronizeRequestButtonPressed:(id)sender;
 - (IBAction)postSynchronizeRequestButtonPressed:(id)sender;
 - (IBAction)postAsynchronizeRequestButtonPressed:(id)sender;
+- (IBAction)postAsynchronizeRequestAndPictureButtonPressed:(id)sender;
 
 @end
 
@@ -92,4 +97,16 @@
         }
     }];
 }
+
+- (IBAction)postAsynchronizeRequestAndPictureButtonPressed:(id)sender {
+    
+    [RequestBase postRequestWithImageName:@"myPicture2" Image:[UIImage imageNamed:@"颜色填充-1"] callback:^(NSError *error, NSMutableDictionary *result) {
+        
+        if (!error) {
+            
+            NSLog(@"%@", result);
+        }
+    }];
+}
+
 @end

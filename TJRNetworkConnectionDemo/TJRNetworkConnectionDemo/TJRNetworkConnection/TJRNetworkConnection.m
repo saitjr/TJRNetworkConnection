@@ -117,6 +117,21 @@
 
 }
 
+/**
+ *  发起POST异步带图片请求
+ *
+ *  @param method     网络请求地址
+ *  @param parameters 参数
+ *  @param pictures   图片
+ *  @param callback   回调方法
+ */
+- (void)sendPostAsynchronizeRequestWithMethod:(NSString *)method parameters:(NSDictionary *)parameters pictures:(NSDictionary *)pictures callback:(Callback)callback {
+    
+    self.callback = callback;
+
+    [NSURLConnection connectionWithRequest:[self configPostRequestWithMethod:method parameters:parameters pictures:pictures] delegate:self];
+}
+
 #pragma mark - 配置GET/POST请求
 
 /**
@@ -174,6 +189,87 @@
     }
     // 将参数加在httpbody中
     request.HTTPBody = [httpBodyString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    return request;
+}
+
+/**
+ *  配置POST带图片参数
+ *
+ *  @param method     网络请求地址
+ *  @param parameters 参数
+ *  @param pictures   图片参数
+ *
+ *  @return 配置完成的请求
+ */
+- (NSURLRequest *)configPostRequestWithMethod:(NSString *)method parameters:(NSDictionary *)parameters pictures:(NSDictionary *)pictures {
+    
+    //分界线的标识符
+    NSString *TWITTERFON_FORM_BOUNDARY = @"AaB03x";
+    //根据url初始化request
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:method]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                                       timeoutInterval:20];
+    //分界线 --AaB03x
+    NSString *boundary = [NSString stringWithFormat:@"--%@",TWITTERFON_FORM_BOUNDARY];
+    //结束符 AaB03x--
+    NSString *endMPboundary = [NSString stringWithFormat:@"%@--",boundary];
+    //要上传的图片
+    NSString *pictureKey = [[pictures allKeys] firstObject];
+    UIImage *image = [pictures objectForKey:pictureKey];
+    //得到图片的data
+    NSData* data = UIImagePNGRepresentation(image);
+    //http body的字符串
+    NSMutableString *body = [NSMutableString string];
+    //参数的集合的所有key的集合
+    NSArray *keys = [parameters allKeys];
+    
+    //遍历keys
+    for (int i = 0; i < [keys count]; i ++) {
+        
+        //得到当前key
+        NSString *key = [keys objectAtIndex:i];
+        //如果key不是pic，说明value是字符类型，比如name：Boris
+        if (![key isEqualToString:pictureKey])
+        {
+            //添加分界线，换行
+            [body appendFormat:@"%@\r\n", boundary];
+            //添加字段名称，换2行
+            [body appendFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", key];
+            //添加字段的值
+            [body appendFormat:@"%@\r\n", [parameters objectForKey:key]];
+        }
+    }
+    
+    ////添加分界线，换行
+    [body appendFormat:@"%@\r\n", boundary];
+    //声明pic字段，文件名为boris.png
+    NSString *format = [NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"boris.png\"\r\n", pictureKey];
+    [body appendFormat:@"%@", format];
+    //声明上传文件的格式
+    [body appendFormat:@"Content-Type: image/png\r\n\r\n"];
+    
+    //声明结束符：--AaB03x--
+    NSString *end = [NSString stringWithFormat:@"\r\n%@",endMPboundary];
+    //声明myRequestData，用来放入http body
+    NSMutableData *myRequestData = [NSMutableData data];
+    //将body字符串转化为UTF8格式的二进制
+    [myRequestData appendData:[body dataUsingEncoding:NSUTF8StringEncoding]];
+    //将image的data加入
+    [myRequestData appendData:data];
+    //加入结束符--AaB03x--
+    [myRequestData appendData:[end dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    //设置HTTPHeader中Content-Type的值
+    NSString *content = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",TWITTERFON_FORM_BOUNDARY];
+    //设置HTTPHeader
+    [request setValue:content forHTTPHeaderField:@"Content-Type"];
+    //设置Content-Length
+    [request setValue:[NSString stringWithFormat:@"%ld", [myRequestData length]] forHTTPHeaderField:@"Content-Length"];
+    //设置http body
+    [request setHTTPBody:myRequestData];
+    //http method
+    [request setHTTPMethod:@"POST"];
     
     return request;
 }
