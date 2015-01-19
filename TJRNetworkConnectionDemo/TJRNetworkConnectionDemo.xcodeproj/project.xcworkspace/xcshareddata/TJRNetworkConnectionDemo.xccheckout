@@ -14,7 +14,7 @@
 		<string>https://github.com/saitjr/TJRNetworkConnection.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TJRNetworkConnectionDemo/TJRNetworkConnectionDemo.xcodeproj/project.xcworkspace</string>
+	<string>TJRNetworkConnectionDemo/TJRNetworkConnectionDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3A3B9D08D7A5EADFCCB72A02F95BC47DAC8742B8</key>

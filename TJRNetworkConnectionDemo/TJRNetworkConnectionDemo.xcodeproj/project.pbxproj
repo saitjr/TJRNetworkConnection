@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9610C1A319F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9610C1A219F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m */; };
 		964B8E0819D4492E008E9F3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964B8E0719D4492E008E9F3E /* Foundation.framework */; };
 		964B8E0A19D4492E008E9F3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964B8E0919D4492E008E9F3E /* CoreGraphics.framework */; };
 		964B8E0C19D4492E008E9F3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964B8E0B19D4492E008E9F3E /* UIKit.framework */; };
@@ -24,11 +23,13 @@
 		964B8E3319D4492E008E9F3E /* TJRNetworkConnectionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E3219D4492E008E9F3E /* TJRNetworkConnectionDemoTests.m */; };
 		964B8E3F19D44D2B008E9F3E /* TJRNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E3E19D44D2B008E9F3E /* TJRNetworkConnection.m */; };
 		964B8E4319D45D09008E9F3E /* RequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4219D45D09008E9F3E /* RequestBase.m */; };
-		964B8E4619D460E9008E9F3E /* RequestBase+GetSynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4519D460E9008E9F3E /* RequestBase+GetSynchronizeRequest.m */; };
-		964B8E4919D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4819D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.m */; };
-		964B8E4C19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4B19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m */; };
-		964B8E4F19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4E19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m */; };
 		964E979E19F4922B00CED6A5 /* 颜色填充-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 964E979D19F4922B00CED6A5 /* 颜色填充-1.png */; };
+		96DC62801A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC62751A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m */; };
+		96DC62811A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC62771A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m */; };
+		96DC62821A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC62791A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m */; };
+		96DC62831A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC627B1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m */; };
+		96DC62841A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC627D1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m */; };
+		96DC62851A611ACB00E7A8C2 /* RequestBase+TestPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC627F1A611ACB00E7A8C2 /* RequestBase+TestPort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9610C1A119F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostAsynchronizeRequestSendPicture.h"; sourceTree = "<group>"; };
-		9610C1A219F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostAsynchronizeRequestSendPicture.m"; sourceTree = "<group>"; };
 		964B8E0419D4492E008E9F3E /* TJRNetworkConnectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TJRNetworkConnectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		964B8E0719D4492E008E9F3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		964B8E0919D4492E008E9F3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,15 +66,19 @@
 		964B8E3E19D44D2B008E9F3E /* TJRNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJRNetworkConnection.m; sourceTree = "<group>"; };
 		964B8E4119D45D09008E9F3E /* RequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestBase.h; sourceTree = "<group>"; };
 		964B8E4219D45D09008E9F3E /* RequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestBase.m; sourceTree = "<group>"; };
-		964B8E4419D460E9008E9F3E /* RequestBase+GetSynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+GetSynchronizeRequest.h"; sourceTree = "<group>"; };
-		964B8E4519D460E9008E9F3E /* RequestBase+GetSynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+GetSynchronizeRequest.m"; sourceTree = "<group>"; };
-		964B8E4719D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+GetAsynchronizeRequest.h"; sourceTree = "<group>"; };
-		964B8E4819D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+GetAsynchronizeRequest.m"; sourceTree = "<group>"; };
-		964B8E4A19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostSynchronizeRequest.h"; sourceTree = "<group>"; };
-		964B8E4B19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostSynchronizeRequest.m"; sourceTree = "<group>"; };
-		964B8E4D19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostAsynchronizeRequest.h"; sourceTree = "<group>"; };
-		964B8E4E19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostAsynchronizeRequest.m"; sourceTree = "<group>"; };
 		964E979D19F4922B00CED6A5 /* 颜色填充-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "颜色填充-1.png"; sourceTree = "<group>"; };
+		96DC62741A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+GetAsynchronizeRequest.h"; sourceTree = "<group>"; };
+		96DC62751A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+GetAsynchronizeRequest.m"; sourceTree = "<group>"; };
+		96DC62761A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+GetSynchronizeRequest.h"; sourceTree = "<group>"; };
+		96DC62771A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+GetSynchronizeRequest.m"; sourceTree = "<group>"; };
+		96DC62781A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostAsynchronizeRequest.h"; sourceTree = "<group>"; };
+		96DC62791A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostAsynchronizeRequest.m"; sourceTree = "<group>"; };
+		96DC627A1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostAsynchronizeRequestSendPicture.h"; sourceTree = "<group>"; };
+		96DC627B1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostAsynchronizeRequestSendPicture.m"; sourceTree = "<group>"; };
+		96DC627C1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostSynchronizeRequest.h"; sourceTree = "<group>"; };
+		96DC627D1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostSynchronizeRequest.m"; sourceTree = "<group>"; };
+		96DC627E1A611ACB00E7A8C2 /* RequestBase+TestPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+TestPort.h"; sourceTree = "<group>"; };
+		96DC627F1A611ACB00E7A8C2 /* RequestBase+TestPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+TestPort.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,16 +195,18 @@
 			children = (
 				964B8E4119D45D09008E9F3E /* RequestBase.h */,
 				964B8E4219D45D09008E9F3E /* RequestBase.m */,
-				964B8E4419D460E9008E9F3E /* RequestBase+GetSynchronizeRequest.h */,
-				964B8E4519D460E9008E9F3E /* RequestBase+GetSynchronizeRequest.m */,
-				964B8E4719D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.h */,
-				964B8E4819D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.m */,
-				964B8E4A19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.h */,
-				964B8E4B19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m */,
-				964B8E4D19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.h */,
-				964B8E4E19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m */,
-				9610C1A119F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.h */,
-				9610C1A219F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m */,
+				96DC62741A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.h */,
+				96DC62751A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m */,
+				96DC62761A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.h */,
+				96DC62771A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m */,
+				96DC62781A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.h */,
+				96DC62791A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m */,
+				96DC627A1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.h */,
+				96DC627B1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m */,
+				96DC627C1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.h */,
+				96DC627D1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m */,
+				96DC627E1A611ACB00E7A8C2 /* RequestBase+TestPort.h */,
+				96DC627F1A611ACB00E7A8C2 /* RequestBase+TestPort.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -304,14 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964B8E4619D460E9008E9F3E /* RequestBase+GetSynchronizeRequest.m in Sources */,
-				964B8E4F19D47514008E9F3E /* RequestBase+PostAsynchronizeRequest.m in Sources */,
-				9610C1A319F3EA9100731F59 /* RequestBase+PostAsynchronizeRequestSendPicture.m in Sources */,
-				964B8E4C19D4729F008E9F3E /* RequestBase+PostSynchronizeRequest.m in Sources */,
+				96DC62821A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m in Sources */,
+				96DC62831A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m in Sources */,
+				96DC62841A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m in Sources */,
 				964B8E1E19D4492E008E9F3E /* ViewController.m in Sources */,
+				96DC62811A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m in Sources */,
 				964B8E1819D4492E008E9F3E /* AppDelegate.m in Sources */,
 				964B8E4319D45D09008E9F3E /* RequestBase.m in Sources */,
-				964B8E4919D46BB4008E9F3E /* RequestBase+GetAsynchronizeRequest.m in Sources */,
+				96DC62801A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m in Sources */,
+				96DC62851A611ACB00E7A8C2 /* RequestBase+TestPort.m in Sources */,
 				964B8E1419D4492E008E9F3E /* main.m in Sources */,
 				964B8E3F19D44D2B008E9F3E /* TJRNetworkConnection.m in Sources */,
 			);

@@ -22,6 +22,8 @@
 #import "RequestBase+PostSynchronizeRequest.h"
 #import "RequestBase+PostAsynchronizeRequest.h"
 #import "RequestBase+PostAsynchronizeRequestSendPicture.h"
+#import "RequestBase+TestPort.h"
+#import "RequestBase+LoginRequest.h"
 
 @interface ViewController ()
 
@@ -39,6 +41,7 @@
 - (IBAction)postSynchronizeRequestButtonPressed:(id)sender;
 - (IBAction)postAsynchronizeRequestButtonPressed:(id)sender;
 - (IBAction)postAsynchronizeRequestAndPictureButtonPressed:(id)sender;
+- (IBAction)testPortButtonPressed:(id)sender;
 
 @end
 
@@ -108,5 +111,29 @@
         }
     }];
 }
+
+- (IBAction)testPortButtonPressed:(id)sender {
+    
+    [RequestBase sendTestPortRequest];
+}
+
+/**
+ *  登录按钮点击响应事件
+ *
+ *  @param sender 登录按钮
+ */
+- (void)loginButtonPressed:(UIButton *)sender {
+    
+    // 发起登录请求，将参数传至第二层，进行详细配置（如password的加密等操作）
+    [RequestBase sendLoginRequestWithUsername:@"Jane Doe" password:@"password" callback:^(NSError *error, NSMutableDictionary *result) {
+        
+        // 判断回调是否失败或者返回值是否为字典（也可以将这个步骤放到第二层基类中）
+        if (!error && [result isKindOfClass:[NSDictionary class]]) {
+            
+            NSLog(@"登录成功");
+        }
+    }];
+}
+
 
 @end

@@ -19,24 +19,7 @@
 
 #import "RequestBase.h"
 
-static RequestBase *networkBase = nil;
-
 @implementation RequestBase
-
-- (id)init
-{
-    self = [super init];
-    return self;
-}
-
-+ (RequestBase *)shareNetWorkBase
-{
-    if(networkBase == nil)
-    {
-        networkBase = [[RequestBase alloc] init];
-    }
-    return networkBase;
-}
 
 /**
  *  发起get同步请求

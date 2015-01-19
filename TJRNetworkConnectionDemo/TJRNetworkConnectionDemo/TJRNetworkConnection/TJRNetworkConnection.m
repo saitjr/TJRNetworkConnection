@@ -72,7 +72,7 @@
     
     self.callback = callback;
     
-    [NSURLConnection connectionWithRequest:[self configPostURLRequestWithMethod:method parameters:parameters] delegate:self];
+    [NSURLConnection connectionWithRequest:[self configGetUrlRequestWithMethod:method parameters:parameters] delegate:self];
 }
 
 /**
