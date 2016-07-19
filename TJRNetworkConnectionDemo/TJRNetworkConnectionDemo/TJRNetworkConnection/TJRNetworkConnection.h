@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^Callback)(NSError *error, NSMutableDictionary *result);
+typedef void (^Callback)(NSError *error, id result);
 
 @interface TJRNetworkConnection : NSObject
 

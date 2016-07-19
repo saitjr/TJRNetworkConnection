@@ -23,13 +23,8 @@
 		964B8E3319D4492E008E9F3E /* TJRNetworkConnectionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E3219D4492E008E9F3E /* TJRNetworkConnectionDemoTests.m */; };
 		964B8E3F19D44D2B008E9F3E /* TJRNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E3E19D44D2B008E9F3E /* TJRNetworkConnection.m */; };
 		964B8E4319D45D09008E9F3E /* RequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B8E4219D45D09008E9F3E /* RequestBase.m */; };
-		964E979E19F4922B00CED6A5 /* 颜色填充-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 964E979D19F4922B00CED6A5 /* 颜色填充-1.png */; };
-		96DC62801A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC62751A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m */; };
-		96DC62811A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC62771A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m */; };
-		96DC62821A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC62791A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m */; };
-		96DC62831A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC627B1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m */; };
-		96DC62841A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC627D1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m */; };
-		96DC62851A611ACB00E7A8C2 /* RequestBase+TestPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DC627F1A611ACB00E7A8C2 /* RequestBase+TestPort.m */; };
+		968856771D3E40B40018B57C /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 968856761D3E40B40018B57C /* Article.m */; };
+		9688567A1D3E416B0018B57C /* RequestBase+Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 968856791D3E416B0018B57C /* RequestBase+Article.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,19 +61,10 @@
 		964B8E3E19D44D2B008E9F3E /* TJRNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJRNetworkConnection.m; sourceTree = "<group>"; };
 		964B8E4119D45D09008E9F3E /* RequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestBase.h; sourceTree = "<group>"; };
 		964B8E4219D45D09008E9F3E /* RequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestBase.m; sourceTree = "<group>"; };
-		964E979D19F4922B00CED6A5 /* 颜色填充-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "颜色填充-1.png"; sourceTree = "<group>"; };
-		96DC62741A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+GetAsynchronizeRequest.h"; sourceTree = "<group>"; };
-		96DC62751A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+GetAsynchronizeRequest.m"; sourceTree = "<group>"; };
-		96DC62761A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+GetSynchronizeRequest.h"; sourceTree = "<group>"; };
-		96DC62771A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+GetSynchronizeRequest.m"; sourceTree = "<group>"; };
-		96DC62781A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostAsynchronizeRequest.h"; sourceTree = "<group>"; };
-		96DC62791A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostAsynchronizeRequest.m"; sourceTree = "<group>"; };
-		96DC627A1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostAsynchronizeRequestSendPicture.h"; sourceTree = "<group>"; };
-		96DC627B1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostAsynchronizeRequestSendPicture.m"; sourceTree = "<group>"; };
-		96DC627C1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+PostSynchronizeRequest.h"; sourceTree = "<group>"; };
-		96DC627D1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+PostSynchronizeRequest.m"; sourceTree = "<group>"; };
-		96DC627E1A611ACB00E7A8C2 /* RequestBase+TestPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+TestPort.h"; sourceTree = "<group>"; };
-		96DC627F1A611ACB00E7A8C2 /* RequestBase+TestPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+TestPort.m"; sourceTree = "<group>"; };
+		968856751D3E40B40018B57C /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		968856761D3E40B40018B57C /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		968856781D3E416B0018B57C /* RequestBase+Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RequestBase+Article.h"; sourceTree = "<group>"; };
+		968856791D3E416B0018B57C /* RequestBase+Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RequestBase+Article.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +129,7 @@
 				964B8E1919D4492E008E9F3E /* Main.storyboard */,
 				964B8E1C19D4492E008E9F3E /* ViewController.h */,
 				964B8E1D19D4492E008E9F3E /* ViewController.m */,
-				964E979D19F4922B00CED6A5 /* 颜色填充-1.png */,
+				968856741D3E409F0018B57C /* Model */,
 				964B8E4019D45BE5008E9F3E /* Request */,
 				964B8E3C19D44CCD008E9F3E /* TJRNetworkConnection */,
 				964B8E1F19D4492E008E9F3E /* Images.xcassets */,
@@ -195,20 +181,19 @@
 			children = (
 				964B8E4119D45D09008E9F3E /* RequestBase.h */,
 				964B8E4219D45D09008E9F3E /* RequestBase.m */,
-				96DC62741A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.h */,
-				96DC62751A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m */,
-				96DC62761A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.h */,
-				96DC62771A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m */,
-				96DC62781A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.h */,
-				96DC62791A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m */,
-				96DC627A1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.h */,
-				96DC627B1A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m */,
-				96DC627C1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.h */,
-				96DC627D1A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m */,
-				96DC627E1A611ACB00E7A8C2 /* RequestBase+TestPort.h */,
-				96DC627F1A611ACB00E7A8C2 /* RequestBase+TestPort.m */,
+				968856781D3E416B0018B57C /* RequestBase+Article.h */,
+				968856791D3E416B0018B57C /* RequestBase+Article.m */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		968856741D3E409F0018B57C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				968856751D3E40B40018B57C /* Article.h */,
+				968856761D3E40B40018B57C /* Article.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				964B8E2019D4492E008E9F3E /* Images.xcassets in Resources */,
-				964E979E19F4922B00CED6A5 /* 颜色填充-1.png in Resources */,
 				964B8E1219D4492E008E9F3E /* InfoPlist.strings in Resources */,
 				964B8E1B19D4492E008E9F3E /* Main.storyboard in Resources */,
 			);
@@ -309,15 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96DC62821A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequest.m in Sources */,
-				96DC62831A611ACB00E7A8C2 /* RequestBase+PostAsynchronizeRequestSendPicture.m in Sources */,
-				96DC62841A611ACB00E7A8C2 /* RequestBase+PostSynchronizeRequest.m in Sources */,
 				964B8E1E19D4492E008E9F3E /* ViewController.m in Sources */,
-				96DC62811A611ACB00E7A8C2 /* RequestBase+GetSynchronizeRequest.m in Sources */,
+				968856771D3E40B40018B57C /* Article.m in Sources */,
 				964B8E1819D4492E008E9F3E /* AppDelegate.m in Sources */,
+				9688567A1D3E416B0018B57C /* RequestBase+Article.m in Sources */,
 				964B8E4319D45D09008E9F3E /* RequestBase.m in Sources */,
-				96DC62801A611ACB00E7A8C2 /* RequestBase+GetAsynchronizeRequest.m in Sources */,
-				96DC62851A611ACB00E7A8C2 /* RequestBase+TestPort.m in Sources */,
 				964B8E1419D4492E008E9F3E /* main.m in Sources */,
 				964B8E3F19D44D2B008E9F3E /* TJRNetworkConnection.m in Sources */,
 			);
@@ -443,7 +423,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TJRNetworkConnectionDemo/TJRNetworkConnectionDemo-Prefix.pch";
 				INFOPLIST_FILE = "TJRNetworkConnectionDemo/TJRNetworkConnectionDemo-Info.plist";
@@ -456,7 +435,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TJRNetworkConnectionDemo/TJRNetworkConnectionDemo-Prefix.pch";
 				INFOPLIST_FILE = "TJRNetworkConnectionDemo/TJRNetworkConnectionDemo-Info.plist";

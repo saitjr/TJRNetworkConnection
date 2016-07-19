@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,78 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-g2-Nbn">
-                                <rect key="frame" x="115" y="141" width="90" height="30"/>
-                                <state key="normal" title="GET同步请求">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee1-WW-z46">
+                                <rect key="frame" x="130" y="269" width="60" height="30"/>
+                                <state key="normal" title="发起请求"/>
                                 <connections>
-                                    <action selector="getSynchronizeRequestButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EC0-NG-zLB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4z-0p-hCi">
-                                <rect key="frame" x="115" y="202" width="90" height="30"/>
-                                <state key="normal" title="GET异步请求">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getAsynchronizeRequestButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Wg-vR-Ahb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsG-a2-KaA">
-                                <rect key="frame" x="110" y="291" width="101" height="30"/>
-                                <state key="normal" title="POST同步请求">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="postSynchronizeRequestButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GtO-rh-CfV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqF-jm-bgo">
-                                <rect key="frame" x="110" y="345" width="101" height="30"/>
-                                <state key="normal" title="POST异步请求">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="postAsynchronizeRequestButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jne-Pi-ngf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4g-5E-Z65">
-                                <rect key="frame" x="110" y="403" width="101" height="30"/>
-                                <state key="normal" title="POST上传图片">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="postAsynchronizeRequestAndPictureButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="w5S-zW-yHS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGF-Ub-nhI">
-                                <rect key="frame" x="137" y="455" width="57" height="30"/>
-                                <state key="normal" title="TestPort">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="testPortButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y0w-Kp-f5w"/>
+                                    <action selector="requestButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XgE-5q-Y3e"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ee1-WW-z46" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ovk-uq-rH2"/>
+                            <constraint firstItem="Ee1-WW-z46" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="joU-FC-3G5"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="getAsynchronizeRequestButton" destination="k4z-0p-hCi" id="Gkl-Nm-5LB"/>
-                        <outlet property="getSynchronizeRequestButton" destination="uFe-g2-Nbn" id="jrS-hc-xoS"/>
-                        <outlet property="postAsunchronizeRequestAndPictureButton" destination="y4g-5E-Z65" id="bvh-Wa-kcL"/>
-                        <outlet property="postAsynchronizeRequestButton" destination="JqF-jm-bgo" id="P7k-v3-h7M"/>
-                        <outlet property="postSynchronizeRequestButton" destination="YsG-a2-KaA" id="FaP-AS-mEZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

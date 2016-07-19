@@ -17,123 +17,27 @@
  */
 
 #import "ViewController.h"
-#import "RequestBase+GetSynchronizeRequest.h"
-#import "RequestBase+GetAsynchronizeRequest.h"
-#import "RequestBase+PostSynchronizeRequest.h"
-#import "RequestBase+PostAsynchronizeRequest.h"
-#import "RequestBase+PostAsynchronizeRequestSendPicture.h"
-#import "RequestBase+TestPort.h"
-#import "RequestBase+LoginRequest.h"
+#import "RequestBase+Article.h"
 
 @interface ViewController ()
 
-@property (strong, nonatomic) IBOutlet UIButton *getSynchronizeRequestButton;
-@property (strong, nonatomic) IBOutlet UIButton *getAsynchronizeRequestButton;
-
-@property (strong, nonatomic) IBOutlet UIButton *postSynchronizeRequestButton;
-@property (strong, nonatomic) IBOutlet UIButton *postAsynchronizeRequestButton;
-@property (strong, nonatomic) IBOutlet UIButton *postAsunchronizeRequestAndPictureButton;
-
-
-
-- (IBAction)getSynchronizeRequestButtonPressed:(id)sender;
-- (IBAction)getAsynchronizeRequestButtonPressed:(id)sender;
-- (IBAction)postSynchronizeRequestButtonPressed:(id)sender;
-- (IBAction)postAsynchronizeRequestButtonPressed:(id)sender;
-- (IBAction)postAsynchronizeRequestAndPictureButtonPressed:(id)sender;
-- (IBAction)testPortButtonPressed:(id)sender;
+- (IBAction)requestButtonTapped:(UIButton *)sender;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)getSynchronizeRequestButtonPressed:(id)sender {
-    
-    [RequestBase getRequestWithLat:@"30.575413" lon:@"104.064359" source:@"100000" count:@"50" callback:^(NSError *error, NSMutableDictionary *result) {
-        
-        if (!error) {
-            NSLog(@"%@", result);
-        }
+- (IBAction)requestButtonTapped:(UIButton *)sender {
+    [RequestBase requestArticleWithUserId:@"1" callback:^(NSError *error, id result) {
+        NSLog(@"error %@", error);
+        // 已经在 RequestBase+Article中，将返回的dic+array转为了vc能直接使用的model
+        NSLog(@"%@", result);
     }];
 }
-
-- (IBAction)getAsynchronizeRequestButtonPressed:(id)sender {
-    
-    [RequestBase getRequestWithG:@"ApiGGC" m:@"Public" c:@"getConstantList" type:@"relation_type" callback:^(NSError *error, NSMutableDictionary *result) {
-        
-        if (!error) {
-            
-            NSLog(@"%@", result);
-        }
-    }];
-}
-
-- (IBAction)postSynchronizeRequestButtonPressed:(id)sender {
-    
-    [RequestBase postRequestWithLat:@"30.575413" lon:@"104.064359" source:@"100000" count:@"50" callback:^(NSError *error, NSMutableDictionary *result) {
-        
-        if (!error) {
-            NSLog(@"%@", result);
-        }
-    }];
-}
-
-- (IBAction)postAsynchronizeRequestButtonPressed:(id)sender {
-    
-    [RequestBase postRequestWithG:@"ApiGGC" m:@"Public" c:@"getConstantList" type:@"relation_type" callback:^(NSError *error, NSMutableDictionary *result) {
-        
-        if (!error) {
-            
-            NSLog(@"%@", result);
-        }
-    }];
-}
-
-- (IBAction)postAsynchronizeRequestAndPictureButtonPressed:(id)sender {
-    
-    [RequestBase postRequestWithImageName:@"myPicture2" Image:[UIImage imageNamed:@"颜色填充-1"] callback:^(NSError *error, NSMutableDictionary *result) {
-        
-        if (!error) {
-            
-            NSLog(@"%@", result);
-        }
-    }];
-}
-
-- (IBAction)testPortButtonPressed:(id)sender {
-    
-    [RequestBase sendTestPortRequest];
-}
-
-/**
- *  登录按钮点击响应事件
- *
- *  @param sender 登录按钮
- */
-- (void)loginButtonPressed:(UIButton *)sender {
-    
-    // 发起登录请求，将参数传至第二层，进行详细配置（如password的加密等操作）
-    [RequestBase sendLoginRequestWithUsername:@"Jane Doe" password:@"password" callback:^(NSError *error, NSMutableDictionary *result) {
-        
-        // 判断回调是否失败或者返回值是否为字典（也可以将这个步骤放到第二层基类中）
-        if (!error && [result isKindOfClass:[NSDictionary class]]) {
-            
-            NSLog(@"登录成功");
-        }
-    }];
-}
-
 
 @end
